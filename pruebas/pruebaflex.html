@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #caja{
+    padding: 5px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-grow: 1;
+    }
+    <!--Los flex grow no andan funcionando porque estan los demas flex-->
+    #caja div{
+    border: 1px solid green;
+    }
+    #caja div:nth-child(1){
+        flex-basis: 25%;
+        flex-grow: 2;
+    }
+    #caja div:nth-child(2){
+        flex-basis: 50%;
+    }
+    #caja div:nth-child(3){
+        flex-basis: 25%;
+    }
+    </style>
+</head>
+<body>
+    <div id=caja>
+        <div>Uno</div>
+        <div>Dos<br>
+          Dos<br>
+          Dos<br>
+          Dos<br>
+          Dos<br>
+          Dos<br>
+          Dos<br>
+          Dos<br>
+          Dos<br>
+        </div>
+        <div>Tres</div>
+      </div>
+</body>
+</html>

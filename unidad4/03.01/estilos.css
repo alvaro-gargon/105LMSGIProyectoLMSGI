@@ -1,0 +1,8 @@
+programmingLanguages{
+    white-space:pre;
+    
+}
+example::after{
+    content: ' \A';
+    white-space: pre;
+}

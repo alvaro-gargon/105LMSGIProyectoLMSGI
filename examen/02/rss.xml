@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <pubDate>Mon, 02 Dec 2024 16:05:00 GMT</pubDate>
+    <skipDays>
+        <day>Saturday</day>
+        <day>Sunday</day>
+    </skipDays>
+    <skipHours>
+        <!--Las horas estan asi porque estan en formato GMT, y en España se usa el formato GMT+1-->
+        <hour>23</hour>
+        <hour>0</hour>
+        <hour>1</hour>
+        <hour>2</hour>
+        <hour>3</hour>
+        <hour>4</hour>
+        <hour>5</hour>
+        <hour>6</hour>
+    </skipHours>
+        <title>DAW 105 Alvaro Garcia</title>
+        <link>https://daw105.ieslossauces.es/</link>
+        <description>Servidor web Alvaro Garcia Gonzalez DAW1</description>
+        <lastBuildDate>Tue, 03 Dec 2024 17:05:00 GMT</lastBuildDate>
+        <copyright>2024 IES Los Sauces.Todos los derechos reservados</copyright>
+        <item>
+            <author>alvaro.gargon.4@educa.jcyl.es (Alvaro Garcia)</author>
+            <title>Tabla informacion</title>
+            <link>https://daw105.ieslossauces.es/</link>
+            <description>Se ha añadido una tabla de informacion de los juegos del hambre</description>
+            <pubDate>Mon, 16 Dec 2024 10:00:00 GMT</pubDate>
+            <guid isPermaLink="false">item01</guid>
+        </item>
+        <item>
+            <author>alvaro.gargon.4@educa.jcyl.es (Alvaro Garcia)</author>
+            <title>Cambios UD2.04</title>
+            <link>https://daw105.ieslossauces.es/105LMSGIProyectoLMSGI/unidad2/04/index.html</link>
+            <description>Se ha añadido css que sigue la estructura de la pagina referenciada</description>
+            <pubDate>Sun, 15 Dec 2024 20:40:00 GMT</pubDate>
+            <guid isPermaLink="false">item02</guid>
+        </item>
+        <item>
+            <author>alvaro.gargon.4@educa.jcyl.es (Alvaro Garcia)</author>
+            <title>Unidad4.03</title>
+            <link>https://daw105.ieslossauces.es/105LMSGIProyectoLMSGI/unidad2/02/index.html</link>
+            <description>Se ha añadido una nueva practica</description>
+            <pubDate>Sun, 15 Dec 2024 21:30:00 GMT</pubDate>
+            <guid isPermaLink="false">item03</guid>
+        </item>
+    </channel>
+</rss>

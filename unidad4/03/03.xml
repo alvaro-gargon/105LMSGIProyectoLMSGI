@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE programmingLanguages SYSTEM "dtd.dtd">
+<?xml-stylesheet href="estilos.css" type="text/css"?>
+<programmingLanguages>
+    <lenguaje name="Python">
+        <description>
+            Python es un lenguaje de programación interpretado, de alto nivel y de propósito general.
+        </description>
+        <example>
+            <![CDATA[def saludo():
+                print("¡Hola, Mundo!")
+            saludo()]]>
+
+        </example>
+    </lenguaje>
+    <lenguaje name="JavaScript">
+        <description>
+            JavaScript es un lenguaje de programación que se utiliza para crear contenido dinámico en la web.
+        </description>
+        <example>
+            <![CDATA[function saludo() {
+       alert("¡Hola, Mundo!");
+        }    
+        ]]>
+
+        </example>
+    </lenguaje>
+    <lenguaje name="Java">
+        <description>
+            Java es un lenguaje de programación de propósito general que es ampliamente utilizado en aplicaciones empresariales y móviles.
+        </description>
+        <example>
+            <![CDATA[
+            public class Saludo {
+            public static void main(String[] args) {
+            System.out.println("¡Hola, Mundo!");
+            }
+            }
+
+            ]]>
+
+        </example>
+    </lenguaje>
+    <lenguaje name="C++">
+        <description>
+            C++ es un lenguaje de programación de propósito general, conocido por su eficiencia y uso en aplicaciones de alto rendimiento.
+        </description>
+        <example>
+            <![CDATA[
+             #include <iostream>
+                using namespace std;
+                int main() {
+                    cout << "¡Hola, Mundo!" << endl;
+                    return 0;
+                }
+            ]]>
+
+        </example>
+    </lenguaje>
+    <lenguaje name="Ruby">
+        <description>
+            Ruby es un lenguaje de programación dinámico y de alto nivel, conocido por su sintaxis simple y elegante.
+        </description>
+        <example>
+            <![CDATA[
+            def saludo
+                puts "¡Hola, Mundo!"
+            end
+
+            saludo
+
+            ]]>
+
+        </example>
+    </lenguaje>
+    <!--15/12/2025 -->
+    <!--XML con css -->
+    <!--Alvaro Garcia Gonzalez -->
+</programmingLanguages>

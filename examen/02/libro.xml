@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Nombre:Alvaro Garcia Gonzalez-->
+<!--Descripcion:Primer XML-->
+<!DOCTYPE biblioteca SYSTEM "libro.dtd">
+<tabla>
+    <autor>
+        
+    </autor>
+    <genero>
+    </genero>
+    <subgenero>
+    </subgenero>
+    <titulooriginal>
+    </titulooriginal>
+</tabla>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Nombre:Alvaro Garcia Gonzalez-->
+<!--Descripcion:Primer XML-->
+<!DOCTYPE mail [
+
+]>
+<mail>
+    <remitente>pepe@gmail.com</remitente>
+    <destinatarios>
+        <destinatario>maria@gmail.com</destinatario>
+        <destinatario>marta@gmail.com</destinatario>
+    </destinatarios>
+    <fechamensaje>
+        <anio>2024</anio>
+        <mes>11</mes>
+        <dia>25</dia>
+    </fechamensaje>
+    <asunto><title>Asunto</title><p>Cena navidad 2024</p></asunto>
+    <mensaje>
+        <title>Mensaje</title><p>Invitacion a la Cena de Navidad</p>
+        <p>Querido/a <negrita>compañero/a:</negrita></p>
+        <p>Nos complace invitarle a compartir una noche especial en nuestra <negrita>Cena de Navidad</negrita>, que se celebrara en el encantador <negrita>Parador de Benavente</negrita></p>
+        <p><negrita>Detalles del evento:</negrita></p>
+        <ul>
+            <li><negrita>Fecha: </negrita>Jueves, 21 de diciembre de 2023</li>
+            <li><negrita>Hora: </negrita>21:00</li>
+            <li><negrita>Lugar: </negrita>Parador de Benavente</li>
+        </ul>
+        <p>Ven a disfrutar de una velada inolvidable llena de buena compañia, deliciosa gastronomia y el espiritu navideño que tanto nos une.
+        Habremos preparado un menu especial pensado para celebrar esta magica ocasion</p>
+        <p><negrita>Por favor, confirma tu asistencia antes de 15 de diciembre de 2023 </negrita>respondiendo a este correo o contactando al <negrita>correofalso@gmail.com</negrita></p>
+        <p>Esperamos contar contigo para hacer de esta cena un momento aun mas especial<negrita>¡No faltes!</negrita></p>
+        <p>Con cariño,</p>
+        <p><negrita>Director</negrita></p>
+    </mensaje>
+    <ficheros_adjuntos>
+        <fichero>
+            <nombre>documento.pdf</nombre>
+            <tipo_mime>application/pdf</tipo_mime>
+        </fichero>
+         <fichero>
+            <nombre>imagen.png</nombre>
+            <tipo_mime>image/png</tipo_mime>
+        </fichero>
+    </ficheros_adjuntos>
+</mail>

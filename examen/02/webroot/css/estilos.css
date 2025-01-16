@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    color: white;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px;
+}
+header{
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+}
+.menu{
+    background-color: black;
+    width: 100%;
+}
+body{
+    background-image: url(../media/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    display: flex;
+    position: sticky;
+
+}
+h2{
+    display: inline;
+    padding-right: 100px;
+}
+div h2:nth-child(1){
+    color: yellow;
+}
+div h2:nth-child(2){
+   text-decoration: underline;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: yellow;
+}
+table{
+    border: 1px solid white;
+}
+tr:nth-last-child(1){
+    background-color: #2C3E50;
+}
+th{
+    text-align: center;
+    border: 1px solid white;
+    background-color: #2C3E50;
+}
+td{
+   border-bottom: 1px solid white;
+}
+.tabla{
+    justify-content: center;
+}
+h4{
+    color: orange;
+    text-align: center;
+}
+.personajes article{
+    position: relative;
+    left: 0%;
+    width: 25%;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+}
+article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+article p{
+    color: black;
+}
+.personajes{
+    padding-left: 10px;
+}
+.formulario{
+    margin-top: 0;
+    text-align: center;
+    background-color: #2C3E50;
+}
+label{
+    text-align: center;
+}

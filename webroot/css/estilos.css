@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#Inicio a{
+    color: plum;
+    text-decoration: overline;
+}
+#Inicio {
+    position: fixed;
+    left: 5%;
+}
+h2{
+    color: plum;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+section{
+    margin: 40px;
+    color: white;
+}
+section h2 {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+section a{
+    text-decoration: none;
+    color: red;
+    display: block;
+}
+header{
+    background-color: #1D252F;
+    color: #72DA38;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: rgb(177, 176, 176);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(177, 176, 176);
+}
+footer a:hover{
+    color: white;
+}
+main{
+    text-align: center  ;
+}
+body{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(../media/images/luxa.org-opacity-changed-que-es-lenguaje-marca-1200x630.original.jpg);
+}
+li{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+i{
+    padding-left: 10px;
+    padding-right: 10px;
+}

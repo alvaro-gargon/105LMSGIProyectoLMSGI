@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer a{
+    color: white;
+    
+}
+footer a:active{
+    color: white;
+    text-decoration: dotted;
+}
+header{
+    padding-top: 15px;
+    padding: 15px;
+    text-align: center;
+    background-color: beige;
+    border:5px solid ;
+    margin-bottom: 40px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: #D5CED6;
+}
