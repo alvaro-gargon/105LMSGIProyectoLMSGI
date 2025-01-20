@@ -1,0 +1,19 @@
+<!ELEMENT mail (remitente, destinatarios, fechamensaje, asunto, mensaje, ficheros_adjuntos)>
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destinatarios (destinatario+)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT fechamensaje (anio, mes, dia)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT asunto (title, p)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA | negrita)*>
+<!ELEMENT mensaje (title, p+, ul?, p*)>
+<!ELEMENT ul (li+)>
+<!ELEMENT li (#PCDATA | negrita)*>
+<!ELEMENT negrita (#PCDATA)>
+<!ELEMENT ficheros_adjuntos (fichero+)>
+<!ELEMENT fichero (nombre, tipo_mime)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo_mime (#PCDATA)>

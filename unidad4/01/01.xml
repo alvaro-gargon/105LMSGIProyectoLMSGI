@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Nombre:Alvaro Garcia Gonzalez-->
 <!--Descripcion:Primer XML-->
-<!DOCTYPE mail [
-
-]>
+<!DOCTYPE mail  SYSTEM "dtd.dtd"> 
 <mail>
     <remitente>pepe@gmail.com</remitente>
     <destinatarios>
