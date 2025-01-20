@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/universidad"
+    xmlns="http://www.example.com/universidad"
+    xmlns:alumno="http://www.example.com/alumnos"
+    xmlns:asignaturas="http://www.example.com/asignaturas"
+    xmlns:carreras="http://www.example.com/carreras" elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.example.com/alumnos" schemaLocation="alumno.xsd"/>
+    <xs:import namespace="http://www.example.com/asignaturas" schemaLocation="asignaturas.xsd"/>
+    <xs:import namespace="http://www.example.com/carreras" schemaLocation="carreras.xsd"/>
+</xs:schema>
