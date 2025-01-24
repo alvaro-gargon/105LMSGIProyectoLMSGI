@@ -6,16 +6,17 @@
 <xs:element name="asignaturas">
     <xs:complexType>
         <xs:sequence>
-            <xs:element name="asignaturas" type="tipoAsignatura" maxOccurs="unbounded"/>
+            <xs:element name="asignatura" type="tipoAsignatura" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 </xs:element>
 <!-- Declaracion elementos complejos-->
+
 <xs:complexType name="tipoAsignatura">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
-        <xs:element name="creditos" type="xs:positiveInteger"></xs:element>
-        <xs:element name="creditos_pacticos" type="xs:positiveInteger"></xs:element>
+        <xs:element name="creditos_teoricos" type="xs:float"></xs:element>
+        <xs:element name="creditos_practicos" type="xs:float"></xs:element>
         <xs:element name="trimestre" type="xs:positiveInteger"></xs:element>
     </xs:sequence>
     <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>

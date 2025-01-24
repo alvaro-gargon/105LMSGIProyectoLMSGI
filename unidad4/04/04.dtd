@@ -13,7 +13,7 @@
 <!ELEMENT centro (#PCDATA)>
 <!ELEMENT subdirector (#PCDATA)>
 <!ELEMENT asignaturas (asignatura)+>
-<!ELEMENT asignatura (nombre?,creditos_teoricos?,creditos_practicos?,trimestre?) #EMPTY>
+<!ELEMENT asignatura (nombre?,creditos_teoricos?,creditos_practicos?,trimestre?)>
 <!ATTLIST asignatura id ID #IMPLIED>
 <!ATTLIST asignatura titulacion IDREF #IMPLIED>
 <!ELEMENT creditos_teoricos (#PCDATA)>
