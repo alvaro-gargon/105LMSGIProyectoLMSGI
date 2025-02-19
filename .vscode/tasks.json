@@ -19,7 +19,39 @@
         },
         {
             "type": "xslt",
-            "label": "xslt: Test (New)",
+            "label": "xslt: 05 (New)",
+            "saxonJar": "${config:XSLT.tasks.saxonJar}",
+            "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+            "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+            "resultPath": "${workspaceFolder}/unidad5/05/target/salida.xml",
+            "allowSyntaxExtensions40": "off",
+            "messageEscaping": "adaptive",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$saxon-xslt"
+            ]
+        },
+        {
+            "type": "xslt",
+            "label": "xslt: 06 (New)",
+            "saxonJar": "${config:XSLT.tasks.saxonJar}",
+            "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+            "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+            "resultPath": "${workspaceFolder}/unidad5/06/target/texto.yaml",
+            "allowSyntaxExtensions40": "off",
+            "messageEscaping": "adaptive",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$saxon-xslt"
+            ]
+        },
+        {
+            "type": "xslt",
+            "label": "xslt: 04.Preguntas",
             "saxonJar": "${config:XSLT.tasks.saxonJar}",
             "xsltFile": "${command:xslt-xpath.pickXsltFile}",
             "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
@@ -31,6 +63,12 @@
             },
             "problemMatcher": [
                 "$saxon-xslt"
+            ],
+            "parameters": [
+                {
+                    "name":"corregido",
+                    "value": "si"
+                }
             ]
         }
     ]

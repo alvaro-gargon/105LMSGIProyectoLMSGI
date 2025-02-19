@@ -6,7 +6,7 @@
     <xsl:output method="html" indent="yes"/>
 
     <xsl:template match="/examen">
-        <html>
+    <html>
         <head>
             <titke>4 XSLT -Test Alvaro Garcia Gonzalez</titke>
             <meta charset="UTF-8"/>
@@ -32,7 +32,13 @@
                                         <xsl:element name="input">
                                             <xsl:attribute name="type" select="'radio'"/>
                                             <xsl:attribute name="name" select="concat('p',../../@id)"/>
-                                            <xsl:attribute name="valye" select="position()"/>
+                                            <xsl:attribute name="value" select="position()"/>
+                                            <xsl:if test = "$corregido='si' and  @correcta='correcta'">
+                                                <xsl:attribute name="checked"/>
+                                            </xsl:if>
+                                            <xsl:if test="$corregido='si'">
+                                                <xsl:attribute name="disable"/>
+                                            </xsl:if>
                                         </xsl:element>
                                         <xsl:value-of select="./text()"/>
                                     </label>
@@ -40,12 +46,15 @@
                                 </xsl:for-each>
                             </div>
                         </xsl:for-each>
+                        <div>
+                            <xsl:if test="$corregido='no'">
+                                <input type="submit" value="Enviar"/>
+                                <input type="reset" value="Limpiar"/>
+                            </xsl:if>
+                        </div>
                     </form>
                 </main>
-        </body>
+            </body>
     </html>
     </xsl:template>
-
-    
-
 </xsl:stylesheet>
