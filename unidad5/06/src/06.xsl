@@ -10,7 +10,21 @@
         <xsl:value-of select="concat(name(current()),':')"/>
         <xsl:for-each select="ethernets">
             <xsl:value-of select="concat($newline,$newtab,name(current()),':')"/>
-            
+            <xsl:value-of select="concat($newline,$newtab,newtab,name,':')"/>
+            <xsl:value-of select="concat($newline,$newtab,$newtab,name(addresses),':')"/>
+            <xsl:value-of select="concat($newline,$newtab,$newtab,$newtab,addresses)"/>
+            <xsl:if test="gateway4">
+                <xsl:value-of select="concat($newline,$newtab,$newtab,'routes:')"/>
+                <xsl:value-of select="concat($newline,$newtab,'to:default')"/>
+                <xsl:value-of select="concat($newline,$newtab,'via:',gateway4)"/>
+            </xsl:if> <!-- Puerta de enlace -->
+            <xsl:if test="nameservers">1
+                <xsl:value-of select="concat($newline,$newtab,$newtab,'nameservers:')"/>
+                <xsl:value-of select="concat($newline,$newtab,$newtab,$newtab,'addresses:')"/>
+                <xsl:for-each select="nameservers/addresses">
+                    <xsl:value-of select="concat($newline,$newtab,$newtab,$newtab,$newtab,current())"/>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
 
