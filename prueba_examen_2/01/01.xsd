@@ -3,10 +3,10 @@
   <xs:element name="productosfinancieros">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="producto" maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="producto" maxOccurs="unbounded">
           <xs:complexType>
-            <xs:sequence>
-              <xs:element name="bono" minOccurs="0">
+            <xs:choice>
+              <xs:element name="bono" minOccurs="0"> <!-- El min occurs 0 se pone cuando puede no aparecer-->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="valoractual">
@@ -54,7 +54,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-            </xs:sequence>
+            </xs:choice>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
