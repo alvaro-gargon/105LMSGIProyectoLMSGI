@@ -16,7 +16,7 @@
         <meta name="refresh" content="1"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="robots" content="noindex,follow"/>
-        <title><xsl:value-of select="{$titulo}"/></title>
+        <title><xsl:value-of select="{titulo}"/></title>
     </xsl:template>
 
     

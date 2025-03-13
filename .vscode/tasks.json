@@ -67,6 +67,22 @@
         },
         {
             "type": "xslt",
+            "label": "xslt: Ex2ev-02",
+            "saxonJar": "${config:XSLT.tasks.saxonJar}",
+            "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+            "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+            "resultPath": "${workspaceFolder}/examen/Ex2ev-02/target/index.html",
+            "allowSyntaxExtensions40": "off",
+            "messageEscaping": "adaptive",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$saxon-xslt"
+            ]
+        },
+        {
+            "type": "xslt",
             "label": "xslt: 04.Preguntas",
             "saxonJar": "${config:XSLT.tasks.saxonJar}",
             "xsltFile": "${command:xslt-xpath.pickXsltFile}",
