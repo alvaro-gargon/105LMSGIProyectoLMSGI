@@ -9,10 +9,10 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Horarios de DAW1"/>
+        <meta name="description" content="Trabajanod con xslt"/>
         <meta name="author" content="Alvaro Garcia"/>
         <meta name="Keywords" content="html, css, xslt, xml"/>
-        <meta name="generator" content="Horarios de DAW1"/>
+        <meta name="generator" content="Visual Studio Code"/>
         <meta name="refresh" content="1"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="robots" content="noindex,follow"/>
