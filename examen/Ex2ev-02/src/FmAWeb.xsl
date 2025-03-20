@@ -13,18 +13,22 @@
                 <xsl:call-template name="meta">
                     <xsl:with-param name="titulo" select="'Sabina : Alvaro Garcia Gonzalez'"/>
                 </xsl:call-template>
+                <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
             </head>
             <body>
                 <header>
                     <h1>last.fm</h1>
-                    <h2><xsl:value-of select="@artist"/></h2>
                 </header>
                 <main>
+                <h2><xsl:value-of select="@artist"/></h2>
                     <h3><xsl:text>Álbumes</xsl:text></h3>
                     <div id="caja_principal">
                         <xsl:for-each select="album">
                             <div class="caja_album">
                                 <img src="{image[@size='large']/text()}" alt="{name/text()}"/>
+                                <xsl:if test="not(image[@size='large']/text())">
+                                    <img src="images/sin.png" alt="sin_imagen"/>
+                                </xsl:if>
                                     <div class="texto">
                                         <p><a href="{url/text()}"><xsl:value-of select="name"/></a></p>
                                         <xsl:for-each select="artist">

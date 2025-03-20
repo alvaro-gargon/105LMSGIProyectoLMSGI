@@ -67,6 +67,22 @@
         },
         {
             "type": "xslt",
+            "label": "examen2",
+            "saxonJar": "${config:XSLT.tasks.saxonJar}",
+            "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+            "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+            "resultPath": "${workspaceFolder}/examen/03/input/output/pedido.html",
+            "allowSyntaxExtensions40": "off",
+            "messageEscaping": "adaptive",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$saxon-xslt"
+            ]
+        },
+        {
+            "type": "xslt",
             "label": "xslt: Ex2ev-02",
             "saxonJar": "${config:XSLT.tasks.saxonJar}",
             "xsltFile": "${command:xslt-xpath.pickXsltFile}",

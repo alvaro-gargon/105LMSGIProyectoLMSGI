@@ -1,128 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!DOCTYPE HTML><html xmlns:xs="http://www.w3.org/2001/XMLSchema">
    <head>
-      <title>7 XSLT -  Alvaro Garcia </title>
-      <meta charset="UTF-8"/>
-      <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Trabajanod con xslt">
+      <meta name="author" content="Alvaro Garcia">
+      <meta name="Keywords" content="html, css, xslt, xml">
+      <meta name="generator" content="Visual Studio Code">
+      <meta name="refresh" content="1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="noindex,follow">
+      <title>07 Alvaro Garcia</title>
    </head>
    <body>
       <header>
-         <h1>Predicción por municipios</h1>
+         <h1>Prediccion por municipios</h1>
       </header>
       <main>
          <table>
-            <caption>
-                            EL TIEMPO.
-                            BENAVENTE 
-                            (
-                            ZAMORA
-                            )
-                        </caption>
+            <caption>EL TIEMPO . BENAVENTE(ZAMORA)</caption>
             <thead>
-               <tr/>
+               <th>dia</th>
+               <th>Prob. precip</th>
+               <th>Estado del cielo</th>
+               <th>Temperatura(°C)</th>
+               <th>Viento (km/h)</th>
             </thead>
             <tbody>
                <tr>
                   <td>11</td>
-                  <td>5%</td>
-                  <td>
-                     <img src="concat('images/',14,'.gif')"
-                          alt="Poco nuboso"
-                          title="Poco nuboso"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">12</span>/<span class="temp_maxima">26</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Calma,'.gif')" alt="Calma" title="Calma"/>  0</td>
+                  <td>5</td>
+                  <td><img src="images/14.gif" alt=""></td>
+                  <td>12/26</td>
+                  <td><img src="images/Calma.gif" alt="Calma"> 0</td>
                </tr>
                <tr>
                   <td>12</td>
-                  <td>0%</td>
-                  <td>
-                     <img src="concat('images/',11,'.gif')"
-                          alt="Cielo despejado"
-                          title="Cielo despejado"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">13</span>/<span class="temp_maxima">29</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Oeste,'.gif')" alt="Oeste" title="Oeste"/>  5</td>
+                  <td>0</td>
+                  <td><img src="images/11.gif" alt=""></td>
+                  <td>13/29</td>
+                  <td><img src="images/Oeste.gif" alt="Oeste"> 5</td>
                </tr>
                <tr>
                   <td>13</td>
-                  <td>5%</td>
-                  <td>
-                     <img src="concat('images/',12,'.gif')"
-                          alt="Poco nuboso"
-                          title="Poco nuboso"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">14</span>/<span class="temp_maxima">28</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Sudoeste,'.gif')"
-                          alt="Sudoeste"
-                          title="Sudoeste"/>  10</td>
+                  <td>5</td>
+                  <td><img src="images/12.gif" alt=""></td>
+                  <td>14/28</td>
+                  <td><img src="images/Sudoeste.gif" alt="Sudoeste"> 10</td>
                </tr>
                <tr>
                   <td>14</td>
-                  <td>0%</td>
-                  <td>
-                     <img src="concat('images/',11,'.gif')"
-                          alt="Cielo despejado"
-                          title="Cielo despejado"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">12</span>/<span class="temp_maxima">28</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Este,'.gif')" alt="Este" title="Este"/>  20</td>
+                  <td>0</td>
+                  <td><img src="images/11.gif" alt=""></td>
+                  <td>12/28</td>
+                  <td><img src="images/Este.gif" alt="Este"> 20</td>
                </tr>
                <tr>
                   <td>15</td>
-                  <td>0%</td>
-                  <td>
-                     <img src="concat('images/',11,'.gif')"
-                          alt="Cielo despejado"
-                          title="Cielo despejado"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">13</span>/<span class="temp_maxima">29</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Calma,'.gif')" alt="Calma" title="Calma"/>  0</td>
+                  <td>0</td>
+                  <td><img src="images/11.gif" alt=""></td>
+                  <td>13/29</td>
+                  <td><img src="images/Calma.gif" alt="Calma"> 0</td>
                </tr>
                <tr>
                   <td>16</td>
-                  <td>10%</td>
-                  <td>
-                     <img src="concat('images/',13,'.gif')"
-                          alt="Intervalos nubosos"
-                          title="Intervalos nubosos"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">14</span>/<span class="temp_maxima">30</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Sudoeste,'.gif')"
-                          alt="Sudoeste"
-                          title="Sudoeste"/>  15</td>
+                  <td>10</td>
+                  <td><img src="images/13.gif" alt=""></td>
+                  <td>14/30</td>
+                  <td><img src="images/Sudoeste.gif" alt="Sudoeste"> 15</td>
                </tr>
                <tr>
                   <td>17</td>
-                  <td>25%</td>
-                  <td>
-                     <img src="concat('images/',14,'.gif')" alt="Nuboso" title="Nuboso"/>
-                  </td>
-                  <td>
-                     <span class="temp_minima">12</span>/<span class="temp_maxima">24</span>
-                  </td>
-                  <td>
-                     <img src="concat('images/',Sudoeste,'.gif')"
-                          alt="Sudoeste"
-                          title="Sudoeste"/>  25</td>
+                  <td>25</td>
+                  <td><img src="images/14.gif" alt=""></td>
+                  <td>12/24</td>
+                  <td><img src="images/Sudoeste.gif" alt="Sudoeste"> 25</td>
                </tr>
             </tbody>
          </table>

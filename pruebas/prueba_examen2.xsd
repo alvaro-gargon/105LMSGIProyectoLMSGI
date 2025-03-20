@@ -3,9 +3,10 @@
     <xs:element name="productosfinancieros">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="producto" maxOccurs="unbounded">
-                <!--el maxOccurs unvounded es necesario para que funcione el choice  -->
+                <xs:element name="producto">
                     <xs:complexType>
+                    <!-- primero sequence y luego choice-->
+                        <xs:sequence>
                             <xs:choice>
                                 <xs:element name="bono">
                                     <xs:complexType>
@@ -92,6 +93,7 @@
                                     </xs:complexType>
                                 </xs:element>
                             </xs:choice>
+                        </xs:sequence>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
