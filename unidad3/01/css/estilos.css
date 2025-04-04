@@ -1,0 +1,18 @@
+.estilo-cambiado{
+    transform: rotate(10deg);
+}
+.fondo-cambiado{
+    color: white;
+    background-color: black;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:"10px";
+    background-color:"#333333";
+    color:"white";
+}
+.parrafos{
+    
+}

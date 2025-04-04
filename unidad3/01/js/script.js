@@ -38,15 +38,12 @@ parrafos[2].style.backgroundColor="#e6f2ff";
 parrafos[2].style.bordercolor="#2980b9";
 
 var footer=document.querySelector("footer");
-footer.style.backgroundColor="#333333";
-footer.style.color="white";
+
 var enlace=document.getElementsByTagName("a");
 for (var i=0;i<enlace.length;i++){
     enlace[i].style.color="green";
 }
-footer.style.position="relative";
-footer.style.padding="10px";
-footer.style.bottom="0%";
+
 var botones=document.getElementsByTagName("button");
 for (var i=0;i<botones.length;i++){
     botones[i].style.backgroundColor="#009af2";
@@ -57,13 +54,17 @@ function saludar(){
     alert("Esto es una alerta");
 }
 function cambiarColor(){
-    titulo.style.color="white";
-    cuerpo.style.backgroundColor="black";
+    //titulo.style.color="white";
+    //cuerpo.style.backgroundColor="black";
+    cuerpo.classList.toggle("fondo-cambiado");
 }
 function cambiarParrafos(){
+    let boton3=document.getElementById("boton1")
     for (var i = 0; i < parrafos.length; i++) {
-        parrafos[i].style.transform="rotate(10deg)";
+        //parrafos[i].style.transform="rotate(10deg)";
+        parrafos[i].classList.toggle("estilo-cambiado"); //es una classe dentro del css
     }
+    boton3.value=boton3.value === "Cambiar Parrafos" ? "Parrafo original" : "Cambiar Parrafos"
 }
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("boton1").addEventListener("click", saludar);
