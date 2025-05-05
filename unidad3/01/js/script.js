@@ -10,20 +10,7 @@ var body=document.getElementById("cuerpo");
 cuerpo.style.backgroundColor="#f4f4f4";
 cuerpo.style.textAlign="center";
 
-titulo.style.color="#333";
-titulo.style.fontWeight="bold";
-titulo.style.marginBottom="15px";
-titulo.style.textTransform="uppercase";
 
-for (var i = 0; i < parrafos.length; i++) {
-    parrafos[i].style.fontSize = "18px";
-    parrafos[i].style.padding = "10px";
-    parrafos[i].style.width = "60%";
-    parrafos[i].style.borderLeft = "5px solid";
-    parrafos[i].style.borderRadius = "5px";
-    parrafos[i].style.lineHeight = "1.6";
-    parrafos[i].style.margin = "0 auto 15px";
-}
 
 parrafos[0].style.color="#e74c3c";
 parrafos[0].style.backgroundColor="#ffe6e6";
@@ -37,7 +24,7 @@ parrafos[2].style.color="#3498db";
 parrafos[2].style.backgroundColor="#e6f2ff";
 parrafos[2].style.bordercolor="#2980b9";
 
-var footer=document.querySelector("footer");
+
 
 var enlace=document.getElementsByTagName("a");
 for (var i=0;i<enlace.length;i++){
@@ -54,12 +41,15 @@ function saludar(){
     alert("Esto es una alerta");
 }
 function cambiarColor(){
+    
     //titulo.style.color="white";
     //cuerpo.style.backgroundColor="black";
+    var cuerpo = document.getElementById("cuerpo");
     cuerpo.classList.toggle("fondo-cambiado");
+    
 }
 function cambiarParrafos(){
-    let boton3=document.getElementById("boton1")
+    let boton3=document.getElementById("boton3")
     for (var i = 0; i < parrafos.length; i++) {
         //parrafos[i].style.transform="rotate(10deg)";
         parrafos[i].classList.toggle("estilo-cambiado"); //es una classe dentro del css

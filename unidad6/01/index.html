@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>u6.1 JSON: Alvaro Garcia Gonzalez</title>
+    <style>
+        #parrafo {
+            white-space: pre-line;
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #parrafo span {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JSon1</h1>
+    <div id="parrafo"></div>
+    <script>
+        // fetch() es una función incorporada en los navegadores hacer solicitud HTTP (como GET, POST). 
+        // te permite obtener datos desde o hacia un servidor de forma asincrona, 
+        // sin recargar la página 
+        // fetch(url, opciones) 
+        // .then (respuesta => { 
+        //    manejar respuesta }) 
+        // .catch(error => { 
+        //    manejar errores 
+        //   }); 
+        fetch('01.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Error en tiempo de ejecución al cargar")
+                return response.json();   //convierte la respuesta en json 
+            }
+            )
+            .then(jsonData => {
+                console.log(jsonData); // jsonData es un objeto JavaScript 
+                p = document.getElementById('parrafo');
+                p.innerHTML = `Nombre: ${jsonData.Nombre} Edad: ${jsonData.Edad}`
+            })
+            .catch(error => console.log(error)); 
+    </script>
+</body>
+
+</html>
