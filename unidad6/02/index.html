@@ -1,3 +1,4 @@
+
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
@@ -24,7 +25,7 @@
     <button>Cargar lista (JSon)</button>
     <div id="parrafo"></div>
     <script>
-        var boton=document.getElementsByTagName("button");
+        var boton = document.querySelector("button");
         // fetch() es una función incorporada en los navegadores hacer solicitud HTTP (como GET, POST). 
         // te permite obtener datos desde o hacia un servidor de forma asincrona, 
         // sin recargar la página 
@@ -42,12 +43,16 @@
             }
             )
             .then(jsonData => {
+                var p = document.getElementById('parrafo');
+                var contenido = "<ul>";
                 jsonData.forEach(persona => {
                     console.log(jsonData); // jsonData es un objeto JavaScript 
-                    var p = document.getElementById('parrafo');
-                    p.innerHTML += `<li><span class="clave">Nombre: </span>$(persona.Nombre)-
-                        <span class="clave">Edad: </span>$(persona.Edad)</li>`
+                    
+                   contenido += `<li><span class="clave">Nombre: </span>${persona.Nombre} <span class="clave">Edad: </span>${persona.Edad}</li>`;
+                                    
                 });
+                contenido += "</ul>";
+                p.innerHTML = contenido;
             })
             .catch(error => console.log(error)); 
         })
