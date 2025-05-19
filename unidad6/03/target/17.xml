@@ -1,0 +1,72 @@
+<libros>
+  <precioLibro>
+    <titulo>Everyday Italian</titulo>
+    <precio>30.00</precio>
+    <precioIva>31.20</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>Harry Potter</titulo>
+    <precio>29.99</precio>
+    <precioIva>31.19</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>XQuery Kick Start</titulo>
+    <precio>49.99</precio>
+    <precioIva>51.99</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>Learning XML</titulo>
+    <precio>39.95</precio>
+    <precioIva>41.55</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>Clean Code</titulo>
+    <precio>42.00</precio>
+    <precioIva>43.68</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>A Brief History of Time</titulo>
+    <precio>15.99</precio>
+    <precioIva>16.63</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>1984</titulo>
+    <precio>12.99</precio>
+    <precioIva>13.51</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>The Power of Habit</titulo>
+    <precio>21.50</precio>
+    <precioIva>22.36</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>Sapiens: A Brief History of Humankind</titulo>
+    <precio>23.75</precio>
+    <precioIva>24.70</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>The Pragmatic Programmer</titulo>
+    <precio>39.99</precio>
+    <precioIva>41.59</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>Steve Jobs</titulo>
+    <precio>19.99</precio>
+    <precioIva>20.79</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>The Gruffalo</titulo>
+    <precio>8.99</precio>
+    <precioIva>9.35</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>Rich Dad Poor Dad</titulo>
+    <precio>17.50</precio>
+    <precioIva>18.20</precioIva>
+  </precioLibro>
+  <precioLibro>
+    <titulo>The Name of the Wind</titulo>
+    <precio>24.95</precio>
+    <precioIva>25.95</precioIva>
+  </precioLibro>
+</libros>
